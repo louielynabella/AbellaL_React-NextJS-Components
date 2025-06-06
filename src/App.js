@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import WelcomeCard from './components/WelcomeCard';
+import Counter from './components/Counter';
+import StudentInfo from './components/StudentInfo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1>React Components Demo</h1>
+        <WelcomeCard initialName="Wayen" message="Have fun exploring Abella's application!" />
+        <Counter />
+        <StudentInfo />
+      </div>
     </div>
   );
 }
